@@ -1,6 +1,5 @@
 import flet as ft
-from flet import AppBar, Text, Page, View, colors
-from flet.core import page
+from flet import AppBar, Text, View
 from flet.core.colors import Colors
 from flet.core.elevated_button import ElevatedButton
 
