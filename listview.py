@@ -32,19 +32,19 @@ def main(page: ft.Page):
                 profissao=input_profissao.value,
                 salario=input_salario.value,
             )
-            lista.append(input_nome.value)
+            lista.append(obj_user)
             input_nome.value = ""
-            input_profissao.value = ''
-            input_salario.value = ''
+            input_profissao.value = ""
+            input_salario.value = ""
             page.overlay.append(msg_sucesso)
             msg_sucesso.open = True
             page.update()
 
     def exibir_lista(e):
         lv_nome.controls.clear()
-        for nome in lista:
+        for user in lista:
             lv_nome.controls.append(
-                ft.Text(value=nome)
+                ft.Text(value=f"{user.nome} - {user.profissao} - {user.salario}"),
             )
         page.update()
 
@@ -98,7 +98,7 @@ def main(page: ft.Page):
             content=ft.Text("ERROR!"),
             bgcolor=Colors.RED
         )
-    input_nome = ft.TextField(label="Nome",)
+    input_nome = ft.TextField(label="Nome")
     input_profissao = ft.TextField(label="Profissão")
     input_salario = ft.TextField(label="Salário")
 
