@@ -33,10 +33,10 @@ def main(page: ft.Page):
                     "/segunda",
                     [
                         AppBar(title=Text("Segunda tela"), bgcolor=Colors.PRIMARY),
-                        Text(value= f'O titulo do livro é {input_titulo.value}.'),
-                        Text(value= f'Descrição do livro: {input_descricao.value}.'),
-                        Text(value= f'Qual é a categoria desse livro? {input_categaria.value}.'),
-                        Text(value= f'Nome do autor: {input_autor.value}.')
+                        Text(value= f'O titulo do livro é {input_titulo.value}:'),
+                        Text(value= f'Descrição do livro: {input_descricao.value}:'),
+                        Text(value= f'Qual é a categoria desse livro? {input_categaria.value}:'),
+                        Text(value= f'Nome do autor: {input_autor.value}:')
                     ],
                 )
             )
